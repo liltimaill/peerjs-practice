@@ -126,8 +126,9 @@ function App() {
           }
         })
       })
-    })
       call.on('close', removeVideo)
+    })
+      
     return () => {
       peer.destroy()
     }
